@@ -36,6 +36,11 @@ class PlayState extends FlxState
 		bg.color = 0xFFFDE871;
                 add(bg);
 		
+		if (!FlxG.sound.music.playing)
+		{
+			FlxG.sound.playMusic(Paths.music('fnfmusic'));
+		}
+		
 		var black:FlxSprite = new FlxSprite;
 		black = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		black.screenCenter();
