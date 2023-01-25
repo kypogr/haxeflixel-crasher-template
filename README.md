@@ -7,5 +7,5 @@ You are free to use this without credit but for the love of god dont do anything
 
 
 
-oh and shameless plug but if you DO wanna credit me (which id appreciate) then here 
+oh and shameless plug but if you DO wanna credit me (which id appreciate) then heres
 [my twitter](https://twitter.com/kaypogr)
