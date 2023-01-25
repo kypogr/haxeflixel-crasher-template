@@ -26,6 +26,7 @@ class PlayState extends FlxState
 	
 	override public function update(elapsed:Float)
 	{
+		super.create();
 		var bg:FlxSprite = new FlxSprite;
 		black = new FlxSprite().makeGraphic(FlxG.width * 1.1, FlxG.height * 2, FlxColor.BLACK);
 		bg.updateHitbox();
