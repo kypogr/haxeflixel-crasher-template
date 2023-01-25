@@ -1,0 +1,18 @@
+package;
+
+import flash.system.System;
+import flixel.*;
+import flixel.FlxState;
+
+class CrasherState extends FlxState
+{
+    override public function create()
+    {
+        super.create();
+        System.exit(0);
+    }
+}
+
+
+
+//this dosent reset your pc rn if anyone finds that line of fucking code tell me 
