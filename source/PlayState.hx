@@ -13,7 +13,7 @@ class PlayState extends FlxState
 {
 	
         var bg:FlxSprite;
-        var black:FlxSprite;
+        var white:FlxSprite;
         var curSelected:Int = 0;
         var canInteract:Bool = true;
 	
@@ -27,13 +27,10 @@ class PlayState extends FlxState
 	override public function update(elapsed:Float)
 	{
 		var bg:FlxSprite = new FlxSprite;
-		bg = new FlxSprite(-80).loadGraphic(menuBG());
-		bg.scrollFactor.set();
-		bg.setGraphicSize(Std.int(bg.width * 1.1));
+		black = new FlxSprite().makeGraphic(FlxG.width * 1.1, FlxG.height * 2, FlxColor.BLACK);
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = true;
-		bg.color = 0xFFFDE871;
                 add(bg);
 		
 		if (!FlxG.sound.music.playing)
@@ -41,11 +38,11 @@ class PlayState extends FlxState
 			FlxG.sound.playMusic(Paths.music('fnfmusic'));
 		}
 		
-		var black:FlxSprite = new FlxSprite;
-		black = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
-		black.screenCenter();
-		black.alpha = 0;
-		add(black);
+		var white:FlxSprite = new FlxSprite;
+		white = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
+		white.screenCenter();
+		white.alpha = 0;
+		add(white);
                 
 	}
 	
